@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    @media (max-width: 768px) {
+    .nav-links{
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        background: #111;
+        flex-direction: column;
+        width: 200px;
+        text-align: center;
+        transition: 0.4s ease;
+        padding: 20px 0;
+        border-left: 2px solid #ff004f;
+    }
+
+    .nav-links.active{
+        right: 0;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .hamburger.action span:nth-child(1){
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .hamburger.action span:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.action span:nth-child(3){
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+</body>
+</html>
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Video</title>
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;  }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <video controls poster="poster.jpg">
+      <source src="https://youtu.be/euDDOMl-Ayc?t=55" type="video/mp4">
+      <!-- optional: provide webm fallback -->
+      <source src="https://youtu.be/euDDOMl-Ayc?t=55" type="video/webm">
+      Your browser doesn't support HTML5 video. <a href="https://youtu.be/euDDOMl-Ayc?t=55">Download the video</a>.
+    </video>
+  </div>
+</body>
+</html>
